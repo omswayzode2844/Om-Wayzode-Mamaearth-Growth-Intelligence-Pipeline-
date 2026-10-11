@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MamaEarth Growth Intelligence Pipeline
 ### MSc Data Science Capstone Project | IIT Roorkee
 
@@ -267,3 +268,6 @@ print(pd.read_sql_query('SELECT * FROM customers LIMIT 5;', conn))
 
 ### 2. Run the Analysis Notebook
 Open `analysis and visualization.ipynb` in VS Code or Jupyter Lab and execute all cells.
+=======
+# Om-Wayzode-Mamaearth-Growth-Intelligence-Pipeline-
+>>>>>>> 032aa90eb4184a362b5bc5a5b41ee381e48184e3
