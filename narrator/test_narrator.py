@@ -1,5 +1,5 @@
 """
-MSc Data Science Capstone Project - MamaEarth Growth Intelligence Pipeline
+ Project - MamaEarth Growth Intelligence Pipeline
 Test Suite: test_narrator.py
 
 Audits:
