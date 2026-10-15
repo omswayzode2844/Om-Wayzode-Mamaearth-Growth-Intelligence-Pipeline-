@@ -1,7 +1,7 @@
 /*
 ================================================================================
  MAMA EARTH GROWTH INTELLIGENCE PIPELINE
- MSc Data Science Capstone Project - SQL Component
+  Capstone Project - SQL Component
  Database Engine: SQLite
  File: report.sql
  Description: Database Schema DDL & Evaluated Task Queries (a through i)
