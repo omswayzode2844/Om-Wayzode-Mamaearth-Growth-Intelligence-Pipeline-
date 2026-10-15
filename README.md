@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # MamaEarth Growth Intelligence Pipeline
-### MSc Data Science Capstone Project | IIT Roorkee
+### Capstone Project | IIT Roorkee
 
 [![Database](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](sql/schema.sql)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)](analysis%20and%20visualization.ipynb)
@@ -75,7 +75,7 @@ A data intelligence and analytics pipeline investigating customer acquisition dy
 
 All queries are defined in [`sql/schema.sql`](sql/schema.sql) and [`sql/report.sql`](sql/report.sql).
 
-### Task a: Order Totals (2 Marks)
+### Task a: Order Totals 
 * **Objective:** Total orders, total revenue, and average order value (NULL discount = 0%).
 ```sql
 SELECT 
@@ -92,7 +92,7 @@ JOIN products p ON o.product_id = p.product_id;
 
 ---
 
-### Task b: COUNT(*) vs COUNT(col) (2 Marks)
+### Task b: COUNT(*) vs COUNT(col) 
 * **Objective:** Demonstrate unrated orders using `COUNT(*)` vs `COUNT(rating)`.
 ```sql
 SELECT 
@@ -108,7 +108,7 @@ FROM orders;
 
 ---
 
-### Task c: LEFT JOIN + NOT IN (3 Marks)
+### Task c: LEFT JOIN + NOT IN 
 * **Objective:** Find customers with zero orders using two distinct methods (results match).
 ```sql
 -- Method 1: LEFT JOIN
@@ -133,7 +133,7 @@ WHERE c.customer_id NOT IN (
 
 ---
 
-### Task d: GROUP BY + HAVING (3 Marks)
+### Task d: GROUP BY + HAVING 
 * **Objective:** Return rate by city, keeping only cities with return rate > 20%.
 ```sql
 SELECT 
@@ -156,7 +156,7 @@ ORDER BY return_rate_pct DESC;
 
 ---
 
-### Task e: ORDER BY + LIMIT/OFFSET (3 Marks)
+### Task e: ORDER BY + LIMIT/OFFSET 
 * **Objective:** Top 5 customers by spend, then ranks 3–5 via OFFSET.
 ```sql
 -- Part 1: Top 5 Spenders
@@ -192,7 +192,7 @@ LIMIT 3 OFFSET 2;
 
 ---
 
-### Task f: Three-Table JOIN (3 Marks)
+### Task f: Three-Table JOIN 
 * **Objective:** Order count and net revenue broken down by product category.
 ```sql
 SELECT 
@@ -215,7 +215,7 @@ ORDER BY total_revenue DESC;
 
 ---
 
-### Task g: LIKE Pattern Matching (2 Marks)
+### Task g: LIKE Pattern Matching 
 * **Objective:** Retrieve customers whose name begins with 'A'.
 ```sql
 SELECT customer_id, name, city, city_tier, signup_date
@@ -227,7 +227,7 @@ ORDER BY customer_id;
 
 ---
 
-### Task h: DISTINCT (1 Mark)
+### Task h: DISTINCT 
 * **Objective:** Distinct acquisition sources.
 ```sql
 SELECT DISTINCT acquisition_source FROM customers ORDER BY acquisition_source;
@@ -236,7 +236,7 @@ SELECT DISTINCT acquisition_source FROM customers ORDER BY acquisition_source;
 
 ---
 
-### Task i: ALTER + UPDATE CASE (1 Mark)
+### Task i: ALTER + UPDATE CASE 
 * **Objective:** Add `loyalty_tier`: 'Gold' for tier-1 cities (Mumbai, Delhi, Bangalore), else 'Silver'.
 ```sql
 ALTER TABLE customers ADD COLUMN loyalty_tier TEXT;
@@ -255,19 +255,6 @@ END;
 
 ---
 
-## How to Run Locally
 
-### 1. Query SQLite via Python
-```bash
-python -c "
-import sqlite3, pandas as pd
-conn = sqlite3.connect('sql/mamaearth.db')
-print(pd.read_sql_query('SELECT * FROM customers LIMIT 5;', conn))
-"
-```
-
-### 2. Run the Analysis Notebook
-Open `analysis and visualization.ipynb` in VS Code or Jupyter Lab and execute all cells.
-=======
 # Om-Wayzode-Mamaearth-Growth-Intelligence-Pipeline-
 >>>>>>> 032aa90eb4184a362b5bc5a5b41ee381e48184e3
