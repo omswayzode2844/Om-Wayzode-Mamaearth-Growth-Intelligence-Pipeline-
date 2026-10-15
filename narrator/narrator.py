@@ -1,5 +1,5 @@
 """
-MSc Data Science Capstone Project - MamaEarth Growth Intelligence Pipeline
+ Capstone Project - MamaEarth Growth Intelligence Pipeline
 Module: narrator.py
 
 Tasks Implemented:
