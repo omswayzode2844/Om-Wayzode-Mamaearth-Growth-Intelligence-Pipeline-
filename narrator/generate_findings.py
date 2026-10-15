@@ -1,5 +1,5 @@
 """
-MSc Data Science Capstone Project - MamaEarth Growth Intelligence Pipeline
+Capstone Project - MamaEarth Growth Intelligence Pipeline
 Module: generate_findings.py
 Task 1: Structured JSON of verified figures written strictly by code (Never hand-typed).
 """
