@@ -1,5 +1,5 @@
 # GenAI-Powered Insight Narrator
-### MamaEarth Growth Intelligence Pipeline | MSc Data Science Capstone
+### MamaEarth Growth Intelligence Pipeline |  Capstone
 
 This module contains the automated telemetry reconciliation engine, SCR executive insight narrator, and numeric validation checker for **MamaEarth**.
 
